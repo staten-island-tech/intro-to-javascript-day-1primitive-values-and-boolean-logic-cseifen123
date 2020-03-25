@@ -1,13 +1,16 @@
 
 //Formative Assessment 1
-let light= "Yellow";
+let light= "Green";
 if(light === "Green"){
     console.log("Go");
 } else if(light === "Yellow") {
     console.log("Caution");
 } else if(light=== "Red"){
     console.log("Stop");
+}else{
+    console.log("Oh no! Error");
 }
+
 
 //Formative Assessment 2
 let Kristy = "intolerant";
@@ -22,14 +25,15 @@ if(Kristy === "tolerant" && BaoBao === "intolerant"){
     console.log("Get milk only.");
 }
 
+
 //Cupcake Challenge
-let temperature = 75;
+let temperature = 71;
 if(temperature < 68){
-    console.log("It is too cold.");
+    console.log("It is too cold:(");
 }else if(temperature >= 68 && temperature <= 72){
-    console.log("It is perfect.");
+    console.log("It is perfect:)");
 }else if(temperature >= 73 && temperature <= 76){
-    console.log("It is warm.");
+    console.log("It is warm!");
 }else if(temperature > 76){
     console.log("It is too hot.");
 }
