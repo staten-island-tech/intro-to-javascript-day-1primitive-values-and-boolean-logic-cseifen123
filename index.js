@@ -1,42 +1,42 @@
 
-//Formative Assessment 1
-let light= "Green";
-if(light === "Green"){
-    console.log("Go");
-} else if(light === "Yellow") {
-    console.log("Caution");
-} else if(light=== "Red"){
-    console.log("Stop");
-}else{
-    console.log("Oh no! Error");
-}
+// //Formative Assessment 1
+// let light= "Green";
+// if(light === "Green"){
+//     console.log("Go");
+// } else if(light === "Yellow") {
+//     console.log("Caution");
+// } else if(light=== "Red"){
+//     console.log("Stop");
+// }else{
+//     console.log("Oh no! Error");
+// }
 
 
-//Formative Assessment 2
-let Kristy = "intolerant";
-let BaoBao = "tolerant";
-if(Kristy === "tolerant" && BaoBao === "intolerant"){
-    console.log("Get milk and almond milk.");
-} else if(Kristy === "intolerant" && BaoBao === "tolerant") {
-    console.log("Get milk and almond milk.");
-} else if(Kristy === "intolerant" && BaoBao === "intolerant") {
-    console.log("Get almond milk only.");
-}else if(Kristy === "tolerant" && BaoBao === "tolerant"){
-    console.log("Get milk only.");
-}
+// //Formative Assessment 2
+// let Kristy = "intolerant";
+// let BaoBao = "tolerant";
+// if(Kristy === "tolerant" && BaoBao === "intolerant"){
+//     console.log("Get milk and almond milk.");
+// } else if(Kristy === "intolerant" && BaoBao === "tolerant") {
+//     console.log("Get milk and almond milk.");
+// } else if(Kristy === "intolerant" && BaoBao === "intolerant") {
+//     console.log("Get almond milk only.");
+// }else if(Kristy === "tolerant" && BaoBao === "tolerant"){
+//     console.log("Get milk only.");
+// }
 
 
-//Cupcake Challenge
-let temperature = 71;
-if(temperature < 68){
-    console.log("It is too cold:(");
-}else if(temperature >= 68 && temperature <= 72){
-    console.log("It is perfect:)");
-}else if(temperature >= 73 && temperature <= 76){
-    console.log("It is warm!");
-}else if(temperature > 76){
-    console.log("It is too hot.");
-}
+// //Cupcake Challenge
+// let temperature = 71;
+// if(temperature < 68){
+//     console.log("It is too cold:(");
+// }else if(temperature >= 68 && temperature <= 72){
+//     console.log("It is perfect:)");
+// }else if(temperature >= 73 && temperature <= 76){
+//     console.log("It is warm!");
+// }else if(temperature > 76){
+//     console.log("It is too hot.");
+// }
 
 
 
@@ -131,3 +131,135 @@ if(temperature < 68){
 
 
 
+///////////CLASS NOTES DAY 2
+
+
+///////FUNCTIONS
+//input output machines
+// function test(){
+//     console.log("TEST");
+// }
+// test(); //you have to call a function
+// function cool (argument){
+//     console.log(argument);
+// }
+// cool("nice"); //call argument adn pass parameter noce
+
+// function add (x,y){
+//     return x + y;
+// }
+// //console.log(add(2,7));
+// let z = function add (x , y){
+//     return x + y;
+// }
+// console.log(z(1, 11));
+// function argument(name1, name2){ ///write one funtion and state it down there
+//     console.log(name1, name2);
+// }
+// argument("val","eric");
+
+// const add = function(x,y){
+//     return x + y; //immediately ends the function
+    
+// };
+// console.log(add(10,3));
+
+// const name ="brian";
+// name = "diego";//const doesnt let you redefine variable
+
+// const hello = function(){
+//     alert("hello");
+// };
+
+// // // hello();
+
+// const bye = function(){
+//     alert("bye");
+// };
+
+// const beatles = function(){
+//     hello();
+//     bye();
+//     hello();
+//     bye();
+// };
+
+// beatles(); // call bigger function so you dont have to kepp writing all those functions
+
+
+/////////////////scope
+
+//global scope
+// function makeFunc(){
+//     //function scope
+//     const name = "sun";
+//     console.log(name);
+// }
+// function ok (){
+//     //function scope
+//     const name = "moon";
+//     console.log(name);
+// }
+// ok ();
+// makeFunc();
+
+// function makeFunc(){
+//     //function scope
+//     const name = "sun";
+//     function displayName(name){
+//         alert (name);
+//     }
+//     displayName(name);
+// }
+//putting things inside a function protects it
+// const name = "mike" //calling function will call sarah---- global space
+// function hello(){
+//     const name = "Sarah";//typing that name wont don anything --- function scope
+//     function displayName(){
+//         console.log(name);//inner function can acces outer function but outer function cannot access inner variables
+//        // alert(name)
+//     }
+//     return displayName;//returning the inner fucntion produces copy of it
+// }
+// const myFunc = hello();//closure
+// myFunc();
+// //hello();
+
+
+////////arrays
+// const names = ["Diego", "Frid", "Christian", "Valerie", "Haoran", "Brian" ,"Caroline"];
+
+// // names.push("Caroline");
+// // let newNames = names.unshift("Brian");
+// names.forEach(name => console.log(name));//loops throgh every element in array
+//always returned, this keyword is changed
+
+// ///////////spread operators
+
+// const numbers = {1,2,3};
+// const add = function(x,y,z){
+//     return x + y + z;
+// };
+// console.log(add(...numbers));
+
+// const names = ["Diego", "Frid", "Christian", "Valerie", "Haoran" ];
+// names.push("caroline");
+// const extra = names.slice(-3);
+
+
+///////////Challenge 1
+
+const names = ["Riya", "Omor", "Alan", "Jaiyu", "Michael", "Lisa","Richard"];
+const choose = names.filter(name => name.length < 5);
+
+///////////Challenge 2
+
+const students = ["Riya", "Omor", "Alan", "Jaiyu", "Michael", "Lisa","Richard"];
+console.log(students.includes('Junshen')); //false
+ 
+
+function checkAvailability(arr, val) {
+  return arr.some(arrVal => val === arrVal);
+}
+console.log(checkAvailability(students, 'Alan')); // true
+console.log(checkAvailability(students, 'Savva')); // false
