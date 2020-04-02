@@ -136,18 +136,56 @@
 
 ///////FUNCTIONS
 //input output machines
-// function test(){
-//     console.log("TEST");
+// const Names = ["Riya", "Omor", "Alan", "Jaiyu", "Michael", "Lisa","Richard"];
+// const Choose=Names.filter(name => name.length < 5)
+// function test(argument){
+//      const caroline ="C. Seifen";
+//    console.log("good morning", caroline);
+//  console.log("This is the value of the constant " , argument);
+//    // console.log("Caroline");
 // }
-// test(); //you have to call a function
+// //test();
+// var i; 
+// for ( i=0;i<Choose.length;i++) 
+// { test(Choose[i]); }
+      
+//test("caroline"); //you have to call a function
+
 // function cool (argument){
 //     console.log(argument);
 // }
 // cool("nice"); //call argument adn pass parameter noce
 
 // function add (x,y){
-//     return x + y;
+//     if ((x+y) > 15)
+//         return "no way I can do that" 
+//     else
+//         return x + y;
 // }
+// const customers=["John","July","June"];
+// function withdraw(id,value)
+// {
+    
+//     var balances=[100,900,800];
+    
+//     if (balances[id] - value >= 0)
+//        return true ;
+//     else 
+//        return false ;
+
+    
+// }
+
+// function abc(id,value)
+// {
+//     if(withdraw(id,value))
+//         console.log("Take your money and go and thank you mr.", customers[id] ); 
+//     else
+//         console.log("can't do that operation and no way mr. ",customers[id] );
+// }
+// abc(0,900);
+// abc(2,20);
+
 // //console.log(add(2,7));
 // let z = function add (x , y){
 //     return x + y;
@@ -211,6 +249,8 @@
 //     }
 //     displayName(name);
 // }
+
+
 //putting things inside a function protects it
 // const name = "mike" //calling function will call sarah---- global space
 // function hello(){
@@ -219,11 +259,11 @@
 //         console.log(name);//inner function can acces outer function but outer function cannot access inner variables
 //        // alert(name)
 //     }
-//     return displayName;//returning the inner fucntion produces copy of it
+//     return displayName();//returning the inner fucntion produces copy of it
 // }
 // const myFunc = hello();//closure
 // myFunc();
-// //hello();
+//hello();
 
 
 ////////arrays
